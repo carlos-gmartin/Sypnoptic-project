@@ -1,0 +1,95 @@
+/* Navigation bar */ 
+.navbar-expand-lg {
+  text-indent: 50px;
+}
+
+a{
+  color:rgba(34,51,55,1);
+}
+
+a:hover{
+  color: rgba(34,51,55,0.5);
+}
+
+/* Hero Image */
+.bgimage {
+  width:100%;
+  height:700px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('src/pexels-john-zook-4030343.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.hero-text h3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;    
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero-text h4 {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);     
+  border: 10px solid rgba(34,51,55,1);
+  border-radius: 2px;
+}
+
+hr.hero-line {
+  border: 3px solid rgba(34,51,55,1);
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);     
+}
+
+/* Main content */
+
+.container-box {
+  color: white;
+  border: 3px solid rgba(34,51,55,1);
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);   
+}
+
+/* About section */
+
+.about{
+  text-align: left;
+  margin: 50px;
+}
+.about title{
+  color: white;
+  border: 3px solid rgba(34,51,55,1);
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);   
+}
+
+
+/* Form section */
+.form{
+  padding-top: 50px;
+  padding-bottom: 500px;
+  text-align: center;
+}
+
+.form-header{   
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 5px;
+}
+
+.question {    
+  margin: 30px;
+  padding: 50px;  
+}
+.question h5{
+  font-size: xx-large;
+}  
