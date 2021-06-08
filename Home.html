@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    <title>Fishing Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="src/fish-silhouette.png"/>
+    <title>Los Pescadores Hermanos</title>
 </head>
-<body>
-
+<body onload="generate_questions()">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"><img src="src/fish-silhouette.png" height="110px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,21 +60,81 @@
   </section>
  
   <section class="form">
-    <div>
-          <h4 class="form-header">Questions</h4>
-    </div>
-    <div class="container-box question">
-      <h5>How many fish collected?</h3>
-      <input type="number">
-    </div>
-    <div class="container-box question">
-      <h5>How much plastic did your net roughly catch today?</h5>
-      <input type="number">
-    </div>
-    <div class="container-box question">
-      <h5>How much of your bait went to waste?</h5>
-      <input type="number">
-    </div>
+    <form action="/action_page.php">
+      <div>
+            <h4 class="form-header">Questions</h4>
+      </div>
+
+      <!--Question 1-->
+      <div class="container-box question">
+        <h5> Are you going fishing or coming back from fishing</h5>
+        <label for="moving">Going out</label>
+        <input type="range" id="moving" name="moving" min="0" max="100" value="50" step="50" required>
+        <label for="moving">Coming back</label>
+      </div>
+      <!--Question 2-->
+      <div class="container-box question">
+        <h5>How much plastic did your net roughly catch today?</h5>
+        <input type="range" min="1" max="100" value="50" class="slider" id="slider1" required>
+        <p style="font-size:20px;">Around: <span id="output1"></span> </p>
+      </div>
+
+      <!--Question 3-->
+      <div class="container-box question">
+        <h5>Did You Catch Any Of These Fish?</h5>
+        <div class="row">
+          <div class="column">
+            <img src="src/Genyatremus scapularis. (Galapagos Islands).jpg" id="cod" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="src/Wildlife, Peru.jpg" id="mackeral" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="src/cochu-s-blue-tetra.webp" id="trout" style="width:100%">
+          </div>
+        </div>
+      </div>
+
+      <!--Question 4-->
+        <div class="container-box question">
+          <h5>How many fish did you roughly catch today?</h5>
+          <input type="range" min="1" max="100" value="50" class="slider" id="slider2" required>
+          <p style="font-size:20px;">Number of Fish: <span id="output2"></span> </p>
+        </div>
+
+      <!--Question 5-->
+        <div class="container-box question">
+          <h5>How much of your bait went to waste?</h5>
+          <input type="number" required>
+        </div>
+
+      <!--Question 6-->
+        <div class="container-box question">
+          <h5>Where are you going to be fishing today?</h5>
+          <div class="row">
+            <div class="column">
+              <img src="src/Zone1.jpg" id="zone1" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="src/Zone2.jpg" id="zone2" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="src/Zone3.jpg" id="zone3" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+      <!--Question 7-->
+        <div class="container-box question">
+          <h5>Additional comments:</h5>
+          <textarea id="comment" name="comment" rows="5" cols="120"></textarea>
+        </div>
+
+        <div class="container-box question">
+          <input type="submit" value="Submit answers">
+        </div>
+
+    </form>
   </section>
 
 
@@ -134,7 +194,7 @@
   </footer>
 
 
-
+<script src="questions.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
