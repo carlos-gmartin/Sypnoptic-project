@@ -1,0 +1,482 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navigation bar */ 
+.navbar-expand-lg {
+  text-indent: 50px;
+}
+
+a{
+  color:rgba(34,51,55,1);
+}
+
+a:hover{
+  color: rgba(34,51,55,0.5);
+}
+
+/* Hero Image */
+.bgimage {
+  width:100%;
+  height:700px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('src/pexels-john-zook-4030343.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.hero-text h3 {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;    
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero-text h4 {
+  text-align: center;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);     
+  border: 10px solid rgba(34,51,55,1);
+  border-radius: 2px;
+}
+
+hr.hero-line {
+  border: 3px solid rgba(34,51,55,1);
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);     
+}
+
+
+/* Main content */
+
+.container-box {
+  color: white;
+  border: 3px solid rgba(34,51,55,1);
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);   
+}
+
+/* About section */
+
+.about{
+  text-align: left;
+  margin: 45px;  
+  color: white;
+  border: 3px solid rgba(34,51,55,1);
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);   
+}
+
+.title{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+
+/* Form section */
+.form{
+  padding-top: 50px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.form-header{   
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.question {    
+  margin: 30px;
+  padding: 50px;  
+}
+.question h5{
+  font-size: 30px;
+}  
+
+/* Image questions */
+* {
+  box-sizing: border-box;
+  }
+.column {
+  float: left;
+  width: 32%;
+  padding: 10px;
+  padding-top: 30px;
+  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+/* Slider questions */
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 35px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+/* checkboxes zones*/
+
+
+#zone1,#zone2,#zone3, #fish1, #fish2, #fish3{
+  display: none;
+}
+
+.checker {
+	background-position: left center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+  width: 100%;
+}
+
+.zone1-img {
+  background-image: url("src/Zone1.jpg");
+}
+
+.zone2-img {
+  background-image: url("src/Zone2.jpg");
+}
+
+.zone3-img {
+  background-image: url("src/Zone3.jpg");
+}
+
+.fish1-img{
+  background-image: url("src/Genyatremus scapularis. (Galapagos Islands).jpg");
+}
+.fish2-img{
+  background-image: url("src/Wildlife, Peru.jpg");
+}
+.fish3-img{
+  background-image: url("src/cochu-s-blue-tetra.webp");
+}
+
+#zone1:checked + .checker, #zone2:checked + .checker,#zone3:checked + .checker,
+#fish1:checked + .checker, #fish2:checked + .checker, #fish3:checked + .checker{
+	border: 3px solid #04AA6D;
+}
+
+
+
+
+
+
+/* Data and analytics */
+
+.data-statistics {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.data-title{
+  text-align: center;
+  border: 3px solid rgba(34,51,55,1);
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);   
+}
+
+.data-title h4 {
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+
+
+
+/* Footer */
+
+.container-box-footer{
+  color: white;  
+  background: linear-gradient(90deg, rgba(30,19,52,1) 0%, rgba(9,9,121,1) 0%, rgba(34,51,55,1) 0%);
+  left: 0;
+  bottom: 0;
+  width: auto;
+}
+.container-box-footer .row h3 {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.container-box-footer .row p {
+  padding-left: 40px;
+  font-size: larger;
+}
+
+
+
+
+
+
+/* Mobile adaptations. */
+
+/* HOME PAGE */
+
+@media screen and (min-width: 300px) and (max-width:1100px) {
+  .hero-text h3 {
+    font-size: 30px;
+    padding-bottom: 50px;
+    top: 55%;
+  }
+  .hero-text h4 {
+    font-size: 30px;
+    top: 80%;
+    border: 10px solid rgba(34,51,55,1);
+  }
+}
+
+
+@media screen and (min-width: 2800px) {
+  .img-question {
+    height: 35em;
+    width: 45em;
+  }
+}
+
+@media screen and (max-width: 2800px) and (min-width: 1920px) {
+  .img-question {
+    height: 25em;
+    width: 40em;
+  }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1600px) {
+  .img-question {
+    height: 20em;
+    width: 35em;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+  textarea {
+    height: 10em;
+    width: 30em;
+  }
+  .img-question {
+    height: 20em;
+    width: 20em;
+  }
+}
+@media screen and (max-width: 1200px){
+  textarea {
+    height: 8em;
+    width: 20em;
+  } 
+  .img-question {
+    height: 8em;
+    width: 15em;
+  }
+}
+@media screen and (max-width: 500px) {
+  textarea {
+    height: 5em;
+    width: 10em;
+  }
+  .img-question {
+    height: 10em;
+    width: 20em;
+  }
+
+  .check-boxes{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .zone1-img {
+    background-image: url("src/Zone1-small.jpg");
+  }
+  
+  .zone2-img {
+    background-image: url("src/Zone2-small.jpg");
+  }
+  
+  .zone3-img {
+    background-image: url("src/Zone3-small.jpg");
+  }
+
+  .fish1-img{
+    background-image: url("src/small-fish-1.jpg");
+  }
+  .fish2-img{
+    background-image: url("src/small-fish-2.jpg");
+  }
+  .fish3-img{
+    background-image: url("src/small-fish-3.png");
+  }
+
+}
+
+p{
+  font-size: large;
+}
+
+h5{
+  font-weight: bold;
+}
+
+
+/* Creating mobile adaptation for the Images used in information */
+@media only screen and (min-width:480px){
+  #purse-seine{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+  #bottom-trawl{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+  #midwater-trawl{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+  #gillnet{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+  #Long-line-fishing{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+  #pole-and-line{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+  #dredge{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+ #traps{
+    max-height: 500px;
+    max-width: fit-content;
+  }
+}
+
+@media only screen and (max-width:480px){
+  
+  #purse-seine{
+    max-height: 150px;
+  }
+  #bottom-trawl{
+    max-height: 150px;
+  }
+  #midwater-trawl{
+    max-height: 150px;
+  }
+  #gillnet{
+    max-height: 150px;
+  }
+  #Long-line-fishing{
+    max-height: 150px;
+  }
+  #pole-and-line{
+    max-height: 150px;
+
+  }
+  #dredge{
+    max-height: 150px;
+  }
+ #traps{
+    max-height: 150px;
+  }
+}
+
+@media only screen and (max-width:540px){
+  #purse-seine{
+    max-height: 200px;
+    max-width: 400px;
+  }
+  #bottom-trawl{
+    max-height: 200px;
+    max-width: 400px;
+  }
+  #midwater-trawl{
+    max-height: 200px;
+    max-width: 400px;
+  }
+  #gillnet{
+    max-height: 200px;
+    max-width: 400px;
+  }
+  #Long-line-fishing{
+    max-height: 200px;
+    max-width: 400px;
+  }
+  #pole-and-line{
+    max-height: 200px;
+    max-width: 400px;
+  }
+  #dredge{
+    max-height: 200px;
+    max-width: 400px;
+  }
+ #traps{
+  max-height: 200px;
+  max-width: 400px;
+  }
+}
+
+
+@media only screen and (max-width:320px){
+  #purse-seine{
+    max-height: 100px;
+    max-width: 140px;
+  }
+  #bottom-trawl{
+    max-height: 100px;
+    max-width: 140px;
+  }
+  #midwater-trawl{
+    max-height: 100px;
+    max-width: 140px;
+  }
+  #gillnet{
+    max-height: 100px;
+    max-width: 140px;
+  }
+  #Long-line-fishing{
+    max-height: 100px;
+    max-width: 140px;
+  }
+  #pole-and-line{
+    max-height: 100px;
+    max-width: 140px;
+  }
+  #dredge{
+    max-height: 100px;
+    max-width: 140px;
+  }
+ #traps{
+    max-height: 100px;
+    max-width: 140px;
+  }
+}
+
+

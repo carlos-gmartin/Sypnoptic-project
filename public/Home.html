@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="src/fish-silhouette.png"/>
+    <title>Los Pescadores Hermanos</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="Home.html"><img src="src/fish-silhouette.png" height="110px"></a>
+        <div class="navbar-nav">
+            <span class="sr-only">
+              <a class="nav-item nav-link active" href="Home.html">Home</a>
+            </span>
+              <a class="nav-item nav-link" href="Information.html">Information</a>
+              <a class="nav-item nav-link" href="Team.html">Team</a>
+      </div>
+  </nav>
+
+  <!--Hero picture-->
+  <section class="hero"><div class="bgimage img-responsive">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="hero-text">
+            <h3><hr class="hero-line">A Fishermen's Guide</h3>
+            <h4>Answer our questions to help provide information and improve our services!</h4>
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!--About section-->
+  <section class="about">
+    <div class="container-box">
+      <h3 class="title">The Challenge</h3>
+    </div>
+    <div>
+      <p>This design challenge was presented to us by Engineers without borders and we were given a design brief which included the information about Lobitos and Piedritas, a small coastal region in Peru, and the issues they are currently facing.
+        Our task was to understand the issues and implement our own ideas to help and improve the issues they are facing from the design brief.
+      </p>
+    </div>
+    <div class="container-box">
+      <h3 class="title">Our Goal</h3>
+    </div>
+    <div>
+      <p>Our main goals for this project include preventing overfishing in certain areas, gathering more knowledge for the fishermen, maintenance and increased ecotourism income from well kept environments,
+         increased working possibilities and more. 
+         We hope to make it easier for the people living in Lobitos by providing them with more advanced knowledge of the ocean and fishing spots so that they have an easier and more efficient fishing experience.</p>
+    </div>
+  </section>
+  
+  <!--Data form-->
+  <section class="form">
+    <form action="/signup-form" method="POST">
+      <div>
+            <h4 class="form-header">Questions</h4>
+      </div>
+
+      <!--Question 1-->
+      <div class="container-box question">
+        <h5> Are you going fishing or coming back from fishing</h5>
+        <label for="moving">Going out</label>
+        <input type="range" id="moving" name="moving" min="0" max="100" value="50" step="50" required>
+        <label for="moving">Coming back</label>
+      </div>
+      <!--Question 2-->
+      <div class="container-box question">
+        <h5>How much plastic did your net roughly catch today?</h5>
+        <input type="range" min="1" max="100" value="50" class="slider" id="slider1" name="question2" required>
+        <p style="font-size:20px;">Around: <span id="output1"></span> </p>
+      </div>
+
+      <!--Question 3-->
+      <div class="container-box question">
+        <h5>Did You Catch Any Of These Fish?</h5>
+        <div class="row">
+          <div class="column">
+            <input type="checkbox" name="fish1" id="fish1" style="width:100%">
+            <label for="fish1" class="img-question checker fish1-img" style="width:100%"></label>
+          </div>
+          <div class="column">
+            <input type="checkbox" name="fish2" id="fish2" style="width:100%">
+            <label for="fish2" class="img-question checker fish2-img" style="width:100%"></label>
+          </div>
+          <div class="column">
+            <input type="checkbox" name="fish3" id="fish3" style="width:100%">
+            <label for="fish3" class="img-question checker fish3-img" style="width:100%"></label>
+          </div>
+        </div>
+      </div>
+
+      <!--Question 4-->
+        <div class="container-box question">
+          <h5>How many fish did you roughly catch today?</h5>
+          <input type="range" min="1" max="100" value="50" class="slider" id="slider2" name="question4" required>
+          <p style="font-size:20px;">Number of Fish: <span id="output2"></span> </p>
+        </div>
+
+      <!--Question 5-->
+        <div class="container-box question">
+          <h5>How much of your bait went to waste?</h5>
+          <input type="number" name="question5" required>
+        </div>
+
+      <!--Question 6-->
+        <div class="container-box question">
+          <h5>Where are you going to be fishing today?</h5>
+          <div class="row">
+            <div class="check-boxes">
+              <div class="column">
+                <input type="checkbox" name="zone1" id="zone1" style="width:100%">
+                <label for="zone1" class="img-question checker zone1-img" style="width:100%"></label>
+              </div>
+              <div class="column">
+                <input type="checkbox" name="zone2" id="zone2" style="width:100%">
+                <label for="zone2" class="img-question checker zone2-img" style="width:100%"></label>
+              </div>
+              <div class="column">
+                <input type="checkbox" name="zone3" id="zone3" style="width:100%">
+                <label for="zone3" class="img-question checker zone3-img" style="width:100%"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--Question 7-->
+        <div class="container-box question">
+          <h5>Additional comments:</h5>
+          <textarea id="comment" name="comment" rows="5" cols="120"></textarea>
+        </div>
+
+        <div class="container-box question">
+          <input type="submit" value="Submit answers">
+        </div>
+
+    </form>
+  </section>
+
+
+  <!--Live update section-->
+  <section class="data-statistics">
+    <div class="data-title">    
+      <h4>Live updates</h4>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="src/Cat Fish.jpg" class="card-img-top" alt="The Cat Fish">
+        <div class="card-body">
+          <h5 class="card-title">Cat Fish</h5>
+          <p class="card-text">The Cat Fish is found in the Peruvian waters. There are many different types of cat fish, of many different colours,
+             it is a large and powerful predator usually feasting on smaller fish. A more common species found compared to the others.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 10 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="src/Peacock Bass, Peru.jpg" class="card-img-top" alt="The Peacock Bass">
+        <div class="card-body">
+          <h5 class="card-title">Peacock Bass</h5>
+          <p class="card-text">Only the most experienced fishermen can catch a Peacock bass, it is known as the ultimate prize for any fishermen. This fish is a 
+            fighter and has the power to straighten hooks, destroy lures and break lines, something a beginner fishermen should avoid to prevent additional
+            cost.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 8 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="src/Pacu.jpg" class="card-img-top" alt="The Pacu Fish">
+        <div class="card-body">
+          <h5 class="card-title">Pacu</h5>
+          <p class="card-text">This fish can grow up to 50 lbs in size, a very desired fish for it delicious meat, making it a fierce fighter. Many
+            believe it could be a harder catch than the Peacock fish, something you should watch out for.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container-box-footer">
+      <div class="row">
+            <h3 class="text-center">A thank you from our team!</h3>
+            <p class="text-left">Our team appreciates your <strong>time and effort</strong> to deliver such vital information for this website to run, using your form entries we can bring you 
+              <strong>live updates</strong> and valuable tips for <strong>any</strong> levels of fishermen.</p>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="questions.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
